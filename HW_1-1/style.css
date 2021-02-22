@@ -1,0 +1,77 @@
+* {
+  padding: 0;
+  margin: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+body {
+  margin-top: 40px;
+  margin-bottom: 40px;
+  padding: 0 calc(50% - 400px);
+  background-color: #ff9800;
+  font-family: Roboto,Helvetica,Arial,sans-serif;
+  color: #fff;
+  text-align: center;
+}
+
+h1 {
+  letter-spacing: 5px;
+  font-weight: 300;
+}
+
+p {
+  text-align: justify;
+}
+
+input {
+  margin-left: 10px;
+  padding: 0 5px;
+  outline: none;
+}
+
+#temperatureC {
+  padding: 0 5px;
+  margin-right: 10px;
+  width: 15%;
+}
+
+#temperatureF, #example2, #example3 {
+  font-weight: bold;
+}
+
+.task, .solution {
+  padding: 5px 10px;
+}
+
+.task {
+  margin-top: 40px;
+  background-color: #ffba22;
+}
+
+.solution {
+  margin-top: 20px;
+}
+
+.solution__add {
+  padding-left: 10px;
+}
+
+.code {
+  display: inline-block;
+  background: #dd7600;
+}
+
+.list {
+  text-align: justify;
+  list-style: inside;
+}
+
+.list__item {
+  margin-bottom: 5px;
+}
+
+.bold {
+  font-weight: bold;
+}
+/*# sourceMappingURL=style.css.map */
