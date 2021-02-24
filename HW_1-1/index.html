@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JavaScript-1 Lesson-1</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="script.js" async></script>
+</head>
+
+<body>
+    <h1>JavaScript-1</h1>.
+    <h2>Homework 1</h2>
+    <p class="task">Задать температуру в градусах по Цельсию. Вывести в alert соответствующую температуру в градусах по
+        Фаренгейту. Подсказка: расчёт идёт по формуле: Tf = (9 / 5) * Tc + 32, где Tf – температура по Фаренгейту, Tc –
+        температура по Цельсию</p>
+    <p class="solution">Укажите градусы по Цельсию: <input type="number" name="temperatureC" id="temperatureC"
+            placeholder="0"><input type="button" value="Конвертировать" onclick="convertTemperature()"><input
+            type="button" value="Alert" onclick="convertTemperatureAlert()"></p>
+    <p class="solution__add">Итого по Фаренгейту:<span id="temperatureF"></span></p>
+    <p class="task">Работа с переменными. Объявить две переменные: admin и name. Записать в name строку "Василий";
+        Скопировать значение из name в admin. Вывести admin (должно вывести «Василий»).</p>
+    <p class="solution">В переменной "admin" значение: <span id='example2'></span></p>
+    <p class="task">Чему будет равно JS-выражение 1000 + "108"</p>
+    <p class="solution">При JS выражении: 1000 + "108" сработает конкатенация, поскольку одно из значений типа "string".
+        Проверка: <span id='example3'></span></p>
+    <p class="task">Самостоятельно разобраться с атрибутами тега script (async и defer)</p>
+    <p class="solution">Возможны 3 варианта использования атрибутов <span class="code">async</span> и <span
+            class="code">defer</span> тега
+        <span class="code">&#60; script &#62;</span> :
+    <ul class="list">
+        <li class="list__item"><span class="bold">Не используется ни async ни defer.</span> HTML документ загружается,
+            дойдя до скрипта
+            извлекается и выполняется сценарий. После этого загрузка продолжается.</li>
+        <li class="list__item"><span class="bold">Используется атрибут async.</span> По возможности, скрипт выполняется
+            асинхронно - при этом
+            продолжается загрузка страницы.</li>
+        <li class="list__item"><span class="bold">Используется атрибут defer.</span> Скрипт выполняется после полной
+            загрузки страницы.</li>
+    </ul>
+    </p>
+
+</body>
+
+</html>
