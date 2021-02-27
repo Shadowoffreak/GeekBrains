@@ -1,0 +1,165 @@
+$colorBg: #ff9800;
+$colorMenu: #ba1000;
+$colorCode: #f57c00;
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Roboto,Helvetica,Arial,sans-serif;
+    color: #fff;
+    background-color: $colorBg;
+}
+
+a {
+    text-decoration: none;
+}
+
+ul, ol {
+    list-style-position: inside;
+}
+
+.center {
+    padding-right: calc(50% - 400px);
+    padding-left: calc(50% - 400px);
+}
+
+.code {
+    padding: 2px 4px;
+    background: $colorCode;
+    border-radius: 2px;
+}
+
+.note {
+    // border: 1px solid $colorCode;
+    border-radius: 5px;
+    font-size: 14px;
+    background-color: $colorBg - #111;
+    padding: 4px 10px;
+    color: #ddd
+}
+
+.border_bottom {
+    border-bottom: 1px solid $colorCode;
+}
+
+.header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #f57c00;
+    box-shadow: 0 2px 3px 0 rgba(0, 0, 0, 0.2);
+    &__name {
+        padding-top: 10px;
+        padding-bottom: 10px;
+        opacity: 0.5;
+        font-weight: 300;
+        letter-spacing: 3px;
+    }
+    &__menu {
+        position: relative;
+        &_heading {
+            text-decoration: underline;
+            opacity: 0.5;
+            transition-duration: 0.3s;
+            &:hover {
+                cursor: pointer;
+                color: $colorMenu;
+                font-weight: bold;
+            }
+        }
+        &_checkbox:checked ~ &_heading {
+            color: $colorMenu;
+            font-weight: bold;
+    }
+        &_checkbox {
+            display: none;
+        }
+        &_list {
+            display: none;
+            position: absolute;
+            list-style: none;
+            right: 0;
+            top: 250%;
+            z-index: 1;
+            padding: 0 10px;
+            width: 300px;
+            border-radius: 10px;
+            box-shadow: 0 2px 3px 0 rgba(0, 0, 0, 0.2);
+            background-color: #f57c00;
+            text-align: right;
+        }
+        &_checkbox:checked ~ &_list {
+            display: block;
+        }
+        &_item {
+            padding: 10px 0;
+            &:not(:last-child) {
+                border-bottom: 1px solid $colorMenu;
+            }
+        }
+        &_link {
+            display: block;
+            color: $colorMenu;
+            transition-duration: 0.3s;
+            &:hover {
+                color: $colorMenu + #222;
+                transform: translate(-10px)
+            }
+            &_heading {
+                font-weight: 600;
+                letter-spacing: 1px;
+            }
+        }
+    }
+}
+
+.lesson {
+    &__heading {
+        font-size: 28px;
+        font-weight: 300;
+        letter-spacing: 2px;
+        margin: 25px 0;
+        opacity: 0.7;
+    }
+    &__number {
+        text-decoration: underline;
+    }
+    &__paragraph {
+        border: 1px solid $colorCode;
+        border-radius: 10px;
+        padding: 0 10px;
+        margin-bottom: 15px;
+        &_heading {
+            margin: 10px 0;
+            font-weight: bold;
+            text-align: center;
+            padding-bottom: 5px;
+            color: $colorMenu + #222;
+        }
+        &_text {
+            margin-bottom: 10px;
+        }
+    }
+    &__list {
+        &_item {
+            line-height: 28px;
+        }
+    }
+}
+
+.task, .solution {
+    padding: 5px 10px;
+}
+
+.task {
+    margin-top: 40px;
+    background-color: $colorBg+#222;
+}
+
+.solution {
+    margin-top: 20px;
+}

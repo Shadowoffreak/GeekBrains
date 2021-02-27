@@ -1,0 +1,187 @@
+* {
+  padding: 0;
+  margin: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+body {
+  font-family: Roboto,Helvetica,Arial,sans-serif;
+  color: #fff;
+  background-color: #ff9800;
+}
+
+a {
+  text-decoration: none;
+}
+
+ul, ol {
+  list-style-position: inside;
+}
+
+.center {
+  padding-right: calc(50% - 400px);
+  padding-left: calc(50% - 400px);
+}
+
+.code {
+  padding: 2px 4px;
+  background: #f57c00;
+  border-radius: 2px;
+}
+
+.note {
+  border-radius: 5px;
+  font-size: 14px;
+  background-color: #ee8700;
+  padding: 4px 10px;
+  color: #ddd;
+}
+
+.border_bottom {
+  border-bottom: 1px solid #f57c00;
+}
+
+.header {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  background-color: #f57c00;
+  -webkit-box-shadow: 0 2px 3px 0 rgba(0, 0, 0, 0.2);
+          box-shadow: 0 2px 3px 0 rgba(0, 0, 0, 0.2);
+}
+
+.header__name {
+  padding-top: 10px;
+  padding-bottom: 10px;
+  opacity: 0.5;
+  font-weight: 300;
+  letter-spacing: 3px;
+}
+
+.header__menu {
+  position: relative;
+}
+
+.header__menu_heading {
+  text-decoration: underline;
+  opacity: 0.5;
+  -webkit-transition-duration: 0.3s;
+          transition-duration: 0.3s;
+}
+
+.header__menu_heading:hover {
+  cursor: pointer;
+  color: #ba1000;
+  font-weight: bold;
+}
+
+.header__menu_checkbox:checked ~ .header__menu_heading {
+  color: #ba1000;
+  font-weight: bold;
+}
+
+.header__menu_checkbox {
+  display: none;
+}
+
+.header__menu_list {
+  display: none;
+  position: absolute;
+  list-style: none;
+  right: 0;
+  top: 250%;
+  z-index: 1;
+  padding: 0 10px;
+  width: 300px;
+  border-radius: 10px;
+  -webkit-box-shadow: 0 2px 3px 0 rgba(0, 0, 0, 0.2);
+          box-shadow: 0 2px 3px 0 rgba(0, 0, 0, 0.2);
+  background-color: #f57c00;
+  text-align: right;
+}
+
+.header__menu_checkbox:checked ~ .header__menu_list {
+  display: block;
+}
+
+.header__menu_item {
+  padding: 10px 0;
+}
+
+.header__menu_item:not(:last-child) {
+  border-bottom: 1px solid #ba1000;
+}
+
+.header__menu_link {
+  display: block;
+  color: #ba1000;
+  -webkit-transition-duration: 0.3s;
+          transition-duration: 0.3s;
+}
+
+.header__menu_link:hover {
+  color: #dc3222;
+  -webkit-transform: translate(-10px);
+          transform: translate(-10px);
+}
+
+.header__menu_link_heading {
+  font-weight: 600;
+  letter-spacing: 1px;
+}
+
+.lesson__heading {
+  font-size: 28px;
+  font-weight: 300;
+  letter-spacing: 2px;
+  margin: 25px 0;
+  opacity: 0.7;
+}
+
+.lesson__number {
+  text-decoration: underline;
+}
+
+.lesson__paragraph {
+  border: 1px solid #f57c00;
+  border-radius: 10px;
+  padding: 0 10px;
+  margin-bottom: 15px;
+}
+
+.lesson__paragraph_heading {
+  margin: 10px 0;
+  font-weight: bold;
+  text-align: center;
+  padding-bottom: 5px;
+  color: #dc3222;
+}
+
+.lesson__paragraph_text {
+  margin-bottom: 10px;
+}
+
+.lesson__list_item {
+  line-height: 28px;
+}
+
+.task, .solution {
+  padding: 5px 10px;
+}
+
+.task {
+  margin-top: 40px;
+  background-color: #ffba22;
+}
+
+.solution {
+  margin-top: 20px;
+}
+/*# sourceMappingURL=style.css.map */
