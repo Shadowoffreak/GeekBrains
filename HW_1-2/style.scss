@@ -1,4 +1,4 @@
-$colorBg: #ff9800;
+$colorBg: #414141;
 $colorMenu: #ba1000;
 $colorCode: #f57c00;
 
@@ -34,7 +34,6 @@ ul, ol {
 }
 
 .note {
-    // border: 1px solid $colorCode;
     border-radius: 5px;
     font-size: 14px;
     background-color: $colorBg - #111;
@@ -50,20 +49,17 @@ ul, ol {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    background-color: #f57c00;
+    background-color: $colorBg - #111;
     box-shadow: 0 2px 3px 0 rgba(0, 0, 0, 0.2);
     &__name {
         padding-top: 10px;
         padding-bottom: 10px;
-        opacity: 0.5;
-        font-weight: 300;
         letter-spacing: 3px;
     }
     &__menu {
         position: relative;
         &_heading {
             text-decoration: underline;
-            opacity: 0.5;
             transition-duration: 0.3s;
             &:hover {
                 cursor: pointer;
@@ -123,7 +119,6 @@ ul, ol {
         font-weight: 300;
         letter-spacing: 2px;
         margin: 25px 0;
-        opacity: 0.7;
     }
     &__number {
         text-decoration: underline;
@@ -136,7 +131,6 @@ ul, ol {
         &_heading {
             margin: 10px 0;
             font-weight: bold;
-            text-align: center;
             padding-bottom: 5px;
             color: $colorMenu + #222;
         }

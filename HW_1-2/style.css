@@ -8,7 +8,7 @@
 body {
   font-family: Roboto,Helvetica,Arial,sans-serif;
   color: #fff;
-  background-color: #ff9800;
+  background-color: #414141;
 }
 
 a {
@@ -33,7 +33,7 @@ ul, ol {
 .note {
   border-radius: 5px;
   font-size: 14px;
-  background-color: #ee8700;
+  background-color: #303030;
   padding: 4px 10px;
   color: #ddd;
 }
@@ -52,7 +52,7 @@ ul, ol {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  background-color: #f57c00;
+  background-color: #303030;
   -webkit-box-shadow: 0 2px 3px 0 rgba(0, 0, 0, 0.2);
           box-shadow: 0 2px 3px 0 rgba(0, 0, 0, 0.2);
 }
@@ -60,8 +60,6 @@ ul, ol {
 .header__name {
   padding-top: 10px;
   padding-bottom: 10px;
-  opacity: 0.5;
-  font-weight: 300;
   letter-spacing: 3px;
 }
 
@@ -71,7 +69,6 @@ ul, ol {
 
 .header__menu_heading {
   text-decoration: underline;
-  opacity: 0.5;
   -webkit-transition-duration: 0.3s;
           transition-duration: 0.3s;
 }
@@ -142,7 +139,6 @@ ul, ol {
   font-weight: 300;
   letter-spacing: 2px;
   margin: 25px 0;
-  opacity: 0.7;
 }
 
 .lesson__number {
@@ -159,7 +155,6 @@ ul, ol {
 .lesson__paragraph_heading {
   margin: 10px 0;
   font-weight: bold;
-  text-align: center;
   padding-bottom: 5px;
   color: #dc3222;
 }
@@ -178,7 +173,7 @@ ul, ol {
 
 .task {
   margin-top: 40px;
-  background-color: #ffba22;
+  background-color: #636363;
 }
 
 .solution {
